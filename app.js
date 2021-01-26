@@ -6,7 +6,7 @@ const fetchData = async () => {
   let data = await fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      let output = '<h2>Locations</h2>';
+      let output = '';
       data.map((x) => {
         output += `
               <div class='card'>
